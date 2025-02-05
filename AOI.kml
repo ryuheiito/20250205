@@ -1,26 +1,49 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-<Document id="root_doc">
-<Schema name="AOI" id="AOI">
-	<SimpleField name="id" type="float"></SimpleField>
-	<SimpleField name="left" type="float"></SimpleField>
-	<SimpleField name="top" type="float"></SimpleField>
-	<SimpleField name="right" type="float"></SimpleField>
-	<SimpleField name="bottom" type="float"></SimpleField>
-	<SimpleField name="area" type="float"></SimpleField>
-</Schema>
-<Folder><name>AOI</name>
-  <Placemark>
-	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#AOI">
-		<SimpleData name="id">2</SimpleData>
-		<SimpleData name="left">758972.405293751</SimpleData>
-		<SimpleData name="top">3990453.11600324</SimpleData>
-		<SimpleData name="right">763972.405293751</SimpleData>
-		<SimpleData name="bottom">3985453.11600324</SimpleData>
-		<SimpleData name="area">24976016.861</SimpleData>
-	</SchemaData></ExtendedData>
-      <Polygon><outerBoundaryIs><LinearRing><coordinates>-96.0627939228736,36.0101852625156 -96.0073848651128,36.0088143960425 -96.009085934225,35.9637961909868 -96.0644636076315,35.965164807578 -96.0627939228736,36.0101852625156</coordinates></LinearRing></outerBoundaryIs></Polygon>
-  </Placemark>
-</Folder>
-</Document></kml>
+  <Document id="root_doc">
+    <Schema id="AOI" name="AOI">
+      <SimpleField name="id" type="float"/>
+      <SimpleField name="left" type="float"/>
+      <SimpleField name="top" type="float"/>
+      <SimpleField name="right" type="float"/>
+      <SimpleField name="bottom" type="float"/>
+      <SimpleField name="area" type="float"/>
+    </Schema>
+    <Schema id="AOI.schema">
+      <SimpleField name="id" type="float"/>
+      <SimpleField name="left" type="float"/>
+      <SimpleField name="top" type="float"/>
+      <SimpleField name="right" type="float"/>
+      <SimpleField name="bottom" type="float"/>
+      <SimpleField name="area" type="float"/>
+    </Schema>
+    <Document id="AOI">
+      <name>AOI</name>
+      <Placemark id="AOI.1">
+        <ExtendedData>
+          <SchemaData schemaUrl="#AOI.schema">
+            <SimpleData name="id">1</SimpleData>
+            <SimpleData name="left">-10697825.5307923</SimpleData>
+            <SimpleData name="top">4305747.01032795</SimpleData>
+            <SimpleData name="right">-10692825.5307923</SimpleData>
+            <SimpleData name="bottom">4300747.01032795</SimpleData>
+            <SimpleData name="area">16334443.0463382</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                -96.0556161313547,36.0039783362226,0
+                -96.0107003671487,36.0039783362226,0
+                -96.0107003671487,35.9676341818212,0
+                -96.0556161313547,35.9676341818212,0
+                -96.0556161313547,36.0039783362226,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>
