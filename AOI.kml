@@ -17,28 +17,44 @@
       <SimpleField name="bottom" type="float"/>
       <SimpleField name="area" type="float"/>
     </Schema>
+    <Schema id="AOI.schema">
+      <SimpleField name="id" type="float"/>
+      <SimpleField name="left" type="float"/>
+      <SimpleField name="top" type="float"/>
+      <SimpleField name="right" type="float"/>
+      <SimpleField name="bottom" type="float"/>
+      <SimpleField name="area" type="float"/>
+    </Schema>
+    <Schema id="AOI.schema">
+      <SimpleField name="id" type="float"/>
+      <SimpleField name="left" type="float"/>
+      <SimpleField name="top" type="float"/>
+      <SimpleField name="right" type="float"/>
+      <SimpleField name="bottom" type="float"/>
+      <SimpleField name="area" type="float"/>
+    </Schema>
     <Document id="AOI">
       <name>AOI</name>
       <Placemark id="AOI.1">
         <ExtendedData>
           <SchemaData schemaUrl="#AOI.schema">
-            <SimpleData name="id">1</SimpleData>
-            <SimpleData name="left">-10697825.5307923</SimpleData>
-            <SimpleData name="top">4305747.01032795</SimpleData>
-            <SimpleData name="right">-10692825.5307923</SimpleData>
-            <SimpleData name="bottom">4300747.01032795</SimpleData>
-            <SimpleData name="area">16334443.0463382</SimpleData>
+            <SimpleData name="id">11</SimpleData>
+            <SimpleData name="left">766750.794281278</SimpleData>
+            <SimpleData name="top">3997847.28369541</SimpleData>
+            <SimpleData name="right">771750.794281278</SimpleData>
+            <SimpleData name="bottom">3992847.28369541</SimpleData>
+            <SimpleData name="area">24975348.8594125</SimpleData>
           </SchemaData>
         </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
               <coordinates>
-                -96.0556161313547,36.0039783362226,0
-                -96.0107003671487,36.0039783362226,0
-                -96.0107003671487,35.9676341818212,0
-                -96.0556161313547,35.9676341818212,0
-                -96.0556161313547,36.0039783362226,0
+                -96.0592501609127,36.0104534067881,0
+                -96.0038410942026,36.0090808945101,0
+                -96.0055441924908,35.9640628374446,0
+                -96.0609218748363,35.9654330971539,0
+                -96.0592501609127,36.0104534067881,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>
